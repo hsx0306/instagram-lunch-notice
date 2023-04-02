@@ -11,7 +11,8 @@ from instagrapi.types import StoryMention, StoryHashtag
 cl = Client()
 cl.login(username='lunch_sch', password='hhssbb@0306H')
 insta_ids = ['seoung_0306','juchan_312', 'xonu_.iz', 'kho_923']
-
+cl.direct_send('작동을 시작합니다.', user_ids=[cl.user_id_from_username('seoung_0306')])
+print('로그인을 성공적으로 수행했습니다.')
 # 
 def get_lunch():
 
@@ -20,6 +21,7 @@ def get_lunch():
     month = today.strftime("%m")
     date = today.strftime("%d")
     오늘 = f"{year}{month}{date}"
+    
 
 
     try:
