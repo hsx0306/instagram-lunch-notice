@@ -67,7 +67,7 @@ http_post_request = requests.get(url, params= {"type":"json", "pIndex":1, "pSize
 |SD_SCHUL_CODE|STRING (required)|Administrative Standard Code|
 |MMEAL_SC_CODE|STRING (optional)|Meal code|
 |MLSV_YMD|STRING (optional) | Meal Service Date|
-|MLSV_FROM_YMD|STRING|Eating start date|
+|MLSV_FROM_YMD|STRING (optional) |Eating start date|
 |MLSV_TO_YMD|STRING (optional) | Meal Service End Date|
 
 see https://open.neis.go.kr/portal/data/service/selectServicePage.do?page=1&rows=10&sortColumn=&sortDirection=&infId=OPEN17320190722180924242823&infSeq=2 for more information.
