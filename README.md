@@ -3,7 +3,7 @@
   해당문서에서는 https://github.com/subzeroid/instagrapi의 instagrapi를 사용합니다.
   
 ※Note: This document does not utilize the official Instagram API. If you are worried about problems with account blocking, please use the official API.
-  This document uses installrapi at https://github.com/subzeroid/instagrapi .
+  This document uses instagrapi at https://github.com/subzeroid/instagrapi .
 
 ## ⚙️설정
 
