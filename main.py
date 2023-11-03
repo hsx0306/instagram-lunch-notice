@@ -27,7 +27,7 @@ def get_lunch():
         print("시작합니다.")
         url = 'https://open.neis.go.kr/hub/mealServiceDietInfo'
 
-        http_post_request = requests.get(url, params= {"type":"json", "pIndex":1, "pSize":100, "ATPT_OFCDC_SC_CODE":"J10", "SD_SCHUL_CODE":Schoolcode, "MLSV_YMD": 오늘})
+        http_post_request = requests.get(url, params= {"type":"json", "pIndex":1, "pSize":100, "ATPT_OFCDC_SC_CODE":"ATPTcode", "SD_SCHUL_CODE":Schoolcode, "MLSV_YMD": 오늘})
 
         데이터 = json.loads(http_post_request.text)
         점심 = 데이터["mealServiceDietInfo"][1]['row'][0]['DDISH_NM']
