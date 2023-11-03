@@ -7,8 +7,8 @@ from datetime import datetime
 from instagrapi import Client
 
 cl = Client()
-cl.login(username='lunch_sch', password='hhssbb@0306H')
-cl.direct_send('작동을 시작합니다.', user_ids=[cl.user_id_from_username('seoung_0306')])
+cl.login(username='username', password='password') //변경 Edit
+cl.direct_send('작동을 시작합니다.', user_ids=[cl.user_id_from_username('admin_username')]) //변경 Edit
 print('로그인을 성공적으로 수행했습니다.')
 
 def get_lunch():
@@ -27,7 +27,7 @@ def get_lunch():
         print("시작합니다.")
         url = 'https://open.neis.go.kr/hub/mealServiceDietInfo'
 
-        http_post_request = requests.get(url, params= {"type":"json", "pIndex":1, "pSize":100, "ATPT_OFCDC_SC_CODE":"J10", "SD_SCHUL_CODE":7530929, "MLSV_YMD": 오늘})
+        http_post_request = requests.get(url, params= {"type":"json", "pIndex":1, "pSize":100, "ATPT_OFCDC_SC_CODE":"J10", "SD_SCHUL_CODE":Schoolcode, "MLSV_YMD": 오늘})
 
         데이터 = json.loads(http_post_request.text)
         점심 = 데이터["mealServiceDietInfo"][1]['row'][0]['DDISH_NM']
