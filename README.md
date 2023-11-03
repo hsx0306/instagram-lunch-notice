@@ -1,4 +1,4 @@
-# instagram-lunch
+# instagram-lunch-notice (인스타그램 자동 급식 알리미)
 ※주의 해당 문서는 공식 Instagram API를 활용하지 않았습니다. 계정 차단등에 대한 문제를 걱정하시면 공식 API를 활용하시기를 바랍니다.
   해당문서에서는 https://github.com/subzeroid/instagrapi의 instagrapi를 사용합니다.
   
