@@ -38,6 +38,15 @@ pip install
 python main.py
 봇이 실행되면, Instagram을 통해 메시지가 옵니다.
 
+## 기술 스택
+- Programming Language: Python
+- HTTP Requests: requests (네이버 교육청 API 호출)
+- JSON Handling: json (JSON 데이터 파싱 및 처리)
+- Regular Expressions: re (급식 데이터 정리)
+- Time Management: datetime, pytz, time (시간대 설정 및 일정 실행)
+- Instagram API: instagrapi (Instagram 로그인 및 DM 전송)
+- Automation: while True 루프를 사용한 스케줄링
+
 ## 📝 라이센스
 이 프로젝트는 MIT 라이센스를 따릅니다. 자세한 내용은 LICENSE 파일에서 확인할 수 있습니다.
 
